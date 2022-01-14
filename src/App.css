@@ -2,15 +2,14 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  align-content: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTe2qwXFQsb2Yfea7_SxAsN0uiKFOPyzZ6w&usqp=CAU);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modelAdd{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTe2qwXFQsb2Yfea7_SxAsN0uiKFOPyzZ6w&usqp=CAU);
 }
 
 .App-header {
@@ -24,15 +23,64 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tableCountry {
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTe2qwXFQsb2Yfea7_SxAsN0uiKFOPyzZ6w&usqp=CAU);
+}
+
+.table img {
+  width: 45px;
+  cursor: pointer;
+}
+
+.addButton{
+  color: rgb(201, 212, 41);
+}
+
+
+h1 {
+  text-align: left;
+
+}
+
+h1 span span {
+  color: #ffdd1f;
+  position: relative;
+  bottom: -1em;
+  opacity: 0;
+  animation: move-text 0.75s forwards;
+}
+h1 span span:nth-child(2n) { color: #ffdd1f; }
+h1 span span:nth-child(3n) { color: #ffdd1f; }
+h1 span span:nth-child(4n) { color: #ffdd1f; }
+h1 span span:nth-child(5n) { color: #ffdd1f; }
+
+@keyframes move-text {
+  0% {
+    bottom: -0.2em;
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  
+  50% {
+    bottom: 0.2em;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+    transform: scale(0.75);
   }
 }
